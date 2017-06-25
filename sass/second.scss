@@ -1,0 +1,159 @@
+.wrapper__second{
+  background: #e0e0e0;
+  height: 820px;
+  display: flex;
+  position: relative;
+  padding-top: 80px;
+}
+
+.content-pic{
+  margin-top: 60px;
+  z-index: 1;
+  height: 500px;
+
+  &_imm{
+    margin-top: 145px;
+    height: auto;
+  }
+}
+
+.content__text{
+  background-color: #ffffff;
+  z-index: 10;
+  margin-left: -10px;
+  position: absolute;
+  top: 0;
+  left: 300px;
+  width: 660px;
+  box-shadow: 0px 0px 23px 1px rgba(0, 0, 0, 0.4);
+
+  &_next{
+    background-color: transparent;
+    margin-left: 100px;
+    box-shadow: none;
+  }
+}
+
+.header__first{
+  font-family: 'Proxima Nova Lt';
+  font-weight: 600;
+  font-style: normal;
+  font-size: 28px;
+  margin: 0;
+  padding-bottom: 10px;
+
+  &_top{
+    padding-top: 50px;
+  }
+}
+
+.text__wrapper{
+  padding: 50px 70px;
+  color: #424242;
+  p{
+    font-size: 15px;
+  }
+
+  &_wrap{
+    margin-top: 75px;
+    color: #000000;
+  }
+}
+
+.ideas{
+  margin-bottom: 20px;
+  font-family: 'HelveticaNeueCyr';
+  font-weight: 300;
+  font-style: normal;
+
+  &_bottom{
+    margin-bottom: 40px;
+  }
+}
+
+.ideases{
+  margin-bottom: 0;
+  font-family: 'HelveticaNeueCyr';
+  font-weight: 300;
+  font-style: normal;
+}
+
+.content__trainings{
+  margin-left: 18px;
+  margin-bottom: 20px;
+  font-family: 'HelveticaNeueCyr';
+  font-weight: 300;
+  font-style: normal;
+  font-size: 15px;
+}
+
+#form{
+  border: 1px solid #b9b9b9;
+  height: 110px;
+  width: 530px;
+}
+
+.content__form{
+  padding-top: 15px;
+  padding-left: 15px;
+  padding-bottom: 20px;
+  margin: 0 auto;
+  width: 500px;
+}
+
+.form__title{
+  font-family: 'HelveticaNeueCyr';
+  font-weight: 500;
+  font-style: normal;
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #1a1a1a;
+}
+
+.form__name{
+  width: 155px;
+  padding: 5px;
+  margin-right: 10px;
+  border: 2px solid #888888;
+  font-family: 'HelveticaNeueCyr';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 14px;
+}
+
+.form__phone{
+  width: 155px;
+  padding: 5px;
+  margin-right: 10px;
+  border: 2px solid #888888;
+  font-family: 'HelveticaNeueCyr';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 14px;
+}
+
+.button{
+  width: 130px;
+  color: #ffffff;
+  background: #f05c04;
+  padding: 7px;
+  border: none;
+  cursor: pointer;
+  transition: .5s;
+  font-size: 16px;
+
+  &_bottom{
+    margin-left: 170px;
+    margin-top: 50px;
+    width: 140px;
+  }
+
+  &_bot{
+    margin-left: 170px;
+    margin-top: 20px;
+  }
+
+  &:hover{
+    background: #cf530a;
+  }
+}

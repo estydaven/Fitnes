@@ -1,0 +1,397 @@
+extends _template
+
+block content
+    .site-wrapper
+        .wrapper
+            .content
+                .header
+                    .header__logo
+                        img.header__pic(src="./img/logo.png")
+                        p.header__text Улан-Удэ
+                    ul#main_nav_ul.nav__list
+                        li.nav__item
+                            a.nav__link(href="#about") Обо мне
+                        li.nav__item
+                            a.nav__link(href="#trainings") Мой подход
+                        li.nav__item
+                            a.nav__link(href="#price") Цены
+                        li.nav__item.nav__item_item
+                            a.nav__link(href="#free") Бесплатная тренировка
+                        li.nav__item
+                            a.nav__link(href="#contacts") Контакты
+                        li.nav__item.nav__item_phone
+                            i.fa.fa-phone(aria-hidden="true")
+                            | 8-964-414-50-67
+
+                    button.menu
+                        a.nav-call.nav-call_menu(href="#win8") Позвоните мне
+                    a#win8.overlay(href='#x')
+                    include popup-call
+
+                .content__title
+                    h1.hero__title VITALIY
+                    h2.hero__subtitle FILATOV
+                    p.hero__descr ПЕРСОНАЛЬНЫЙ ФИТНЕС-ТРЕНЕР
+                    .line
+                .content__down
+                    a(href="#", data-div="down").down__pic
+                        img(src='./img/down.png')
+        .clear
+        a(name="about" id="about")
+        .wrapper__second#down
+            .content
+                img.content-pic(src="./img/trener-1.png")
+                .content__text
+                    .text__wrapper
+                        h1.header__first Привет, меня зовут Виталий Филатов!
+                        .line.line_second
+                        p.ideas Я персональный фитнес-тренер, эксперт в области спортивного питания. Профессиональный спортсмен со стажем более 9 лет. Стаж работы тренером более 3 лет. Абсолютный чемпион по классическому бодибилдингу в Республике Бурятия. Серебряный призер кубка "Extreme Fitness".
+                        p.ideases Мои основные идеи в тренировках:
+                        ol.content__trainings
+                            li.trainings__item
+                                | Правильное питание без фанатизма. (Хватит голодать!);
+                            li.trainings__item
+                                | Для меня важно выявить проблему и помочь решить ее без вреда для здоровья, не загоняя вас в жесткие рамки;
+                            li.trainings__item
+                                | Ежедневно заряжать вас мотивацией и не позволить сдаться на пути к цели.
+                        p.ideas.ideas_bottom Приглашаю вас на первую бесплатную тренировку, где мы вместе выявим вашу проблему и построим путь ее решения.
+                        form#form(method='post', action='')
+                            .content__form
+                                h3.form__title Запишитесь на первую бесплатную тренировку
+                                input.form__name(type='text', name='name', required='required', placeholder='Введите имя*')
+                                input.form__phone(type='text', name='phone', required='required', placeholder='Введите телефон*')
+                                input.button(type='submit', name='sended', value='Записаться')
+        .wrapper__third
+            .content
+                img.circle(src="./img/circle.png")
+                .wrapper__left
+                    h2.left
+                        |Нам по пути,
+                        br
+                        | если вам...
+                    .line.line_second
+                    p На своем пути я успел поработать со всеми. Молодые люди и девушки, у которых были проблемы с лишним весом. Взрослые люди, которым нужно было просто держать себя в форме.
+                    p Помогал начинающим спортсменам подготовкой к соревнованиям и т.д.
+                    p Я могу с уверенностью сказать, что ваша проблема решаема, нужно только найти правильный подход.
+                .wrapper__right
+                    .text__one
+                        h3 Нужно похудеть
+                        p Скоро лето, или в вашей жизни намечатеся какое-то важное событие и вам нужно избавиться от лишних кг.
+                    .text__two
+                        h3 Поддерживать себя в тонусе
+                        p Вы не ставите высоких достижений в спорте. Вам нужна постоянная хорошая форма и укрепление здоровья.
+                    .text__three
+                        h3 Набрать мышечную массу
+                        p Стать более уверенным в себе, быть привлекательнее для противоположного пола.
+                    .text__four
+                        h3 Набрать общую массу тела
+                        p Если у вас сильный недобор по весу. Поставим акцент на соблюдении программы питания и специальных комплексов упражнений.
+                    .text__five
+                        h3 Скорректировать фигуру
+                        p Устранить диспропорцию частей тела.
+        a(name="trainings" id="trainings")
+        .wrapper__fourth
+            .content
+                img.content-pic.content-pic_imm(src="./img/trener-2.png")
+                .content__text.content__text_next
+                    .text__wrapper.text__wrapper_wrap
+                        h1.header__first Тренер - ваш "чит-код" в фитнесе
+                        .line.line_second
+                        p.ideas Проблема многих в том, что они пренебрегают услугами тренера, думая, что справятся самостоятельно.
+                        p.ideas Фитнес только на первый взгляд кажется простым. Но, на самом деле, результат складывается из огромного количества составляющих и процессов, которые возможно учитывать только после многолетнего опыта тренировок и постоянного развития в этом направлении.
+                        p.ideas
+                            |По статистике, с тренером вы добьетесь нужных результатов
+                            br
+                            |в 3-4 раза быстрее, тем самым сэкономив уйму сил и времени.
+                        p.ideas В работе я пропагандирую индивидуальный подход. Но почти каждая ваша цель складывается из нескольких направлений, по которым мы будем работать:
+                        ol.content__trainings
+                            li.trainings__item
+                                | Правильно поставленная задача;
+                            li.trainings__item
+                                | Выявление ошибок в питании и подбор рациона под вас и ваши цели;
+                            li.trainings__item
+                                | Авторские тренировки;
+                            li.trainings__item
+                                | Работа над "образом мысли";
+                            li.trainings__item
+                                | Мотивация и контроль;
+        .wrapper__fifth
+            .content.content_five
+                h1.header__first.header__first_top
+                    | Как мы будем совместно работать над каждой составляющей
+                    br
+                    | вашей цели
+                .line.line_third
+                .item-left
+                    img.pic__left(src="./img/img-2.png")
+                    .block__text.block__text_one
+                        .paragraph
+                            h3 Правильно поставим задачу
+                            p
+                                |Без правильного курса ни один корабль
+                                br
+                                |не переплывет океан. И ни один спортсмен
+                                br
+                                |без правильно поставленной цели и плана
+                                br
+                                |не достигнет результата.
+                            p
+                                |На начальном этапе мы совместно поставим достижимые и в то же время амбициозные цели
+                                br
+                                |на 1-6 месяцев.
+                            p В процессе работы каждые 2 недели будем фиксировать результаты.
+                .clear
+                .item-right
+                    .block__text.block__text_two
+                        .paragraph
+                            h3 Составим программу питания
+                            p
+                                |Самую важную роль в построении тела играет питание. Поэтому основной акцент будет
+                                br
+                                |на питании и его соблюдении.
+                    img.pic__right(src="./img/img-6.png")
+                .clear
+                .item-left
+                    img.pic__left(src="./img/img-5.png")
+                    .block__text.block__text_three
+                        .paragraph
+                            h3
+                                | Авторские тренировки в зале
+                                br
+                                | и в домашних условиях
+                            p Составим оптимальную программу тренировок исходя из вашего времени и деятельности.
+                .clear
+                .item-right
+                    .block__text.block__text_four
+                        .paragraph
+                            h3 Работа над "образом мысли"
+                            p
+                                |Очень важный момент как вы видите
+                                br
+                                |и воспринимаете фитнес. Моя задача - научить вас чувствовать и видеть фитнес.
+                    img.pic__right(src="./img/img-4.png")
+                .clear
+                .item-left.item-left_last
+                    img.pic__left(src="./img/img-3.png")
+                    .block__text.block__text_five
+                        .paragraph
+                            h3 Мотивация и контроль
+                            p
+                                |Потеря мотивации - это "бич" всех начинающих.
+                                br
+                                |Я не дам вам сойти с дистанции.
+                                br
+                                |Буду поддерживать и контролировать вас
+                                br
+                                |24 часа в сутки!
+                .clear
+        .wrapper__sixth
+            .content
+                .wrapper__text
+                    h1
+                        | Возьму ответственность за ваши
+                        br
+                        | результаты
+                    .line.line_second
+                    p Я на 100% уверен в эффективности своих методов тренировок. Если вы будете следовать инструкциям, соблюдать режим питания, занятий в зале и не добьётесь намеченной цели, то будете тренироваться БЕСПЛАТНО.
+                    p Запишитесь на бесплатную тренировку, где мы познакомимся, обсудим вашу цель и сделаем первый шаг к её достижению.
+                    button.button.button_bottom
+                        a.button-btn(href="#win9") Подробнее
+                    a#win9.overlay(href='#x')
+                    include popup-training
+        .wrapper__seventh
+            .content
+                .opinion
+                    .opinion__header
+                        h1.header__first Мои подопечные обо мне
+                        .line.line_second
+                    .opinion__item.opinion__item_left
+                        .opinion__text
+                            h3 Марина, 32 года
+                            p Я здесь, чтобы помочь тебе обрести "Идеальную фигуру". Несколько лет назад я сама похудела на 20 килограммов, и это изменило все.
+                        img.opinion__pic-first(src="./img/img-1.png")
+                    .clear
+                    .opinion__item.opinion__item_right
+                        img.opinion__pic-second(src="./img/img-1.png")
+                        .opinion__text
+                            h3 Марина, 32 года
+                            p Я здесь, чтобы помочь тебе обрести "Идеальную фигуру". Несколько лет назад я сама похудела на 20 килограммов, и это изменило все.
+                    .clear
+                    .opinion__item.opinion__item_left
+                        .opinion__text
+                            h3 Марина, 32 года
+                            p Я здесь, чтобы помочь тебе обрести "Идеальную фигуру". Несколько лет назад я сама похудела на 20 килограммов, и это изменило все.
+                        img.opinion__pic-third(src="./img/img-1.png")
+                    .clear
+        a(name="price" id="price")
+        .wrapper__eighth
+            .content
+                .price-descroption
+                    h1.header__first Мои услуги
+                    .line.line_price
+                    p.price__descr Пакетированные тренировки в зале (оплата зала включена в стоимость)
+                .price__wrapper
+                    .price
+                        .price__item
+                            h3 4 занятия
+                            ul
+                                li.price-item 4 индивидуальные тренировки
+                                li.price-item Питание
+                                li.price-item Программа тренировок
+                                li.price-item Дистанционный контроль
+                            .line__thing
+                            .price__number
+                                | 3000 руб/мес
+                            button.button__price
+                                a.button-btn(href='#win1') Записаться
+                            a#win1.overlay(href='#x')
+                            include popup-training
+
+                        .price__item
+                            h3 8 занятий
+                            ul
+                                li.price-item 8 индивидуальных тренировок
+                                li.price-item Питание
+                                li.price-item Программа тренировок
+                                li.price-item Дистанционный контроль
+                            .line__thing
+                            .price__number
+                                | 5600 руб/мес
+                            button.button__price
+                                a.button-btn(href='#win2') Записаться
+                            a#win2.overlay(href='#x')
+                            include popup-training
+                        .price__item
+                            h3 12 занятий
+                            ul
+                                li.price-item 12 индивидуальных тренировок
+                                li.price-item Питание
+                                li.price-item Программа тренировок
+                                li.price-item Дистанционный контроль
+                            .line__thing
+                            .price__number
+                                | 7800 руб/мес
+                            button.button__price
+                                a.button-btn(href='#win3') Записаться
+                            a#win3.overlay(href='#x')
+                            include popup-training
+                    .price
+                        p.price__descr Удалённая помощь
+                        .price__item
+                            h3 Тренировки online
+                            ul
+                                li.price-item.price-item_bold Питание
+                                li.price-item.price-item_bold Программа тренировок
+                                li.price-item.price-item_bold Дистанционный контроль
+                            button.button__price.button__price_message
+                                a.button-btn(href='#win4') Узнать подробнее
+                            a#win4.overlay(href='#x')
+                            include popup-consult
+                        .price__item
+                            h3 Программа питания
+                            ul
+                                li.price-item.price-item_bold Анализ вашего текущего рациона питания и выявление ошибок.
+                                li.price-item.price-item_bold Составление программы питания под ваши цели и задачи
+                            button.button__price.button__price_message
+                                a.button-btn(href='#win5') Узнать подробнее
+                            a#win5.overlay(href='#x')
+                            include popup-consult
+                        .price__item
+                            h3 Программа тренировок
+                            ul
+                                li.price-item.price-item_bold  Составление программы тренировок исходя из ваших целей и задач на срок до 1 до 3 месяцев
+                            button.button__price.button__price_message
+                                a.button-btn(href='#win6') Узнать подробнее
+                            a#win6.overlay(href='#x')
+                            include popup-consult
+                    .price
+                        .price__item
+                            h3 Спортивное питание
+                            ul
+                                li Помогу подобрать спортивные добавки под ваши цели и задачи, распишу их рациональное применение
+                            button.button__price.button__price_msg
+                                a.button-btn(href='#win7') Узнать подробнее
+                            a#win7.overlay(href='#x')
+                            include popup-consult
+
+        a(name="free" id="free")
+        .wrapper__ninth
+            .content
+                .wrapper__text.wrapper__text_left
+                    h1 Хотите попробовать БЕСПЛАТНО?
+                    .line.line_second
+                    p Вам интересно гарантированно достигать результатов в фитнесе?
+                    p Воспользуйтесь беспроигрышным вариантом! Запишитесь на первую бесплатную тренировку, где мы познакомимся, обсудим вашу цель, сделаем первый шаг к ее достижению и вы поймете для себя, готовы ли двигаться дальше вместе со мной.
+                    button.button.button_bot
+                        a.button-btn(href="#win10") Записаться
+                    a#win10.overlay(href='#x')
+                    include popup-training
+        a(name="contacts" id="contacts")
+        .wrapper__tenth
+            .content
+                .map
+                    .map__descr
+                        h1.header__first Зал всегда рядом
+                        .line.line_price
+                        p Тренировки проходят в центре Улан-Удэ.
+                        p Адрес: г.Улан-Удэ, ул.Почтамтская 1, ФК Сибирь
+            script(type='text/javascript', charset='utf-8', async='', src='https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Abc2d9c7285ec45315c8d003993a57d5ce70c89aaeba9fd2ed6b76db5ea878428&width=100%&height=880&lang=ru_RU&scroll=true')
+        #updown
+        .wrapper__eleventh
+            .content
+                .footer__form
+                    form.form(method='post', action='')
+                        .forms
+                            h1.footer__title  Остались вопросы?
+                            h3.footer__descr Напиши мне, и я с удовольствием отвечу на них
+                            input.footer__name(type='text', name='name', required='required', placeholder='Ваше имя')
+                            input.footer__phone(type='text', name='phone', required='required', placeholder='Ваш телефон')
+                            input.footer__question(type="text", name="text", required="required", placeholder='Напишите вопрос')
+                            button.footer__button(type='submit', name='sended') Отправить
+            .footer
+                // Yandex.Metrika counter
+                script(type='text/javascript').
+                    (function (d, w, c) {
+                        (w[c] = w[c] || []).push(function () {
+                            try {
+                                w.yaCounter44834188 = new Ya.Metrika({
+                                    id: 44834188,
+                                    clickmap: true,
+                                    trackLinks: true,
+                                    accurateTrackBounce: true
+                                });
+                            } catch (e) {
+                            }
+                        });
+                        var n = d.getElementsByTagName("script")[0],
+                            s = d.createElement("script"),
+                            f = function () {
+                                n.parentNode.insertBefore(s, n);
+                            };
+                        s.type = "text/javascript";
+                        s.async = true;
+                        s.src = "https://mc.yandex.ru/metrika/watch.js";
+                        if (w.opera == "[object Opera]") {
+                            d.addEventListener("DOMContentLoaded", f, false);
+                        } else {
+                            f();
+                        }
+                    })(document, window, "yandex_metrika_callbacks");
+                noscript
+                    div
+                        img(src='https://mc.yandex.ru/watch/44834188', style='position:absolute; left:-9999px;', alt='')
+                // /Yandex.Metrika counter
+
+                .content
+                    .content__footer
+                        .footer__text
+                            img.footer__pic(src="./img/logo.png")
+                            p Персональный тренер Виталий Филатов
+                        .confidential
+                            a(href="#") Политика конфиденциальности
+                        .footer__social
+                            a(href="http://instagram.com/vitfilatov").down__pic
+                                img(src='./img/insta.png')
+                                p Я в Instagram
+
+
